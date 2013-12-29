@@ -1,6 +1,6 @@
 module SmtRails
   class Engine < ::Rails::Engine
-    config.before_configuration do |app|
+    config.before_initialize do |app|
       app.paths['app/views'] << SmtRails.template_base_path
     end
     
